@@ -1,0 +1,508 @@
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-top-row">
+            <div class="footer-logo">
+                <img src="assets/img/homez-logo.png" alt="Homez Logo" class="logo-icon">
+                <span class="logo-text">homez</span>
+            </div>
+            <div class="footer-social">
+                <span class="follow-us">Follow Us</span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-content-grid">
+            
+            <div class="footer-col footer-popular">
+                <h4 class="col-title">Popular Search</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Apartment for Sale</a></li>
+                    <li><a href="#">Apartment for Rent</a></li>
+                    <li><a href="#">Offices for Sale</a></li>
+                    <li><a href="#">Offices for Rent</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-quick-links">
+                <h4 class="col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Pricing Plans</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-discovery">
+                <h4 class="col-title">Discovery</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Chicago</a></li>
+                    <li><a href="#">Los Angeles</a></li>
+                    <li><a href="#">New Jersey</a></li>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">California</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col footer-info-apps">
+                
+                <div class="contact-group">
+                    <h4 class="col-title">Total Free Customer Care</h4>
+                    <p class="contact-detail phone">(+086) 123 456 789</p>
+                </div>
+                
+                <div class="contact-group">
+                    <h4 class="col-title">Live Support?</h4>
+                    <p class="contact-detail email">hi@homez.com</p>
+                </div>
+
+                <div class="subscribe-group">
+                    <h4 class="col-title-bold">Keep Yourself Up to Date</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+<div class="app-links">
+    <h4 class="col-title">Apps</h4>
+    
+    <a href="#" class="app-btn apple">
+        <i class="fab fa-apple"></i>
+        <div class="app-text-group">
+            <span class="app-label">Download on the</span>
+            <span class="app-store-name">Apple Store</span>
+        </div>
+    </a>
+    
+    <a href="#" class="app-btn google">
+        <i class="fab fa-google-play"></i>
+        <div class="app-text-group">
+            <span class="app-label">Get in on</span>
+            <span class="app-store-name">Google Play</span>
+        </div>
+    </a>
+</div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="footer-bottom-bar">
+        <div class="bottom-bar-container">
+            <p class="copyright">© Homez - All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<style>
+
+    /* ====================================================
+   CSS FOR FOOTER SECTION
+   ==================================================== */
+
+.main-footer {
+    background-color: #181A20; /* Dark background color */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* --- Top Row (Logo and Social) --- */
+.footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333538;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 30px; /* Adjust size */
+    height: 30px;
+    filter: brightness(0) invert(1); /* Ensure the icon is white/light if it's colored */
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 8px;
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.follow-us {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.footer-social a {
+    color: #ccc;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #EB6753; /* Hover color */
+}
+
+/* --- Content Grid --- */
+.footer-content-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer-col {
+    padding-right: 20px;
+}
+
+.footer-col:nth-child(1) { flex: 0 0 15%; }
+.footer-col:nth-child(2) { flex: 0 0 15%; }
+.footer-col:nth-child(3) { flex: 0 0 15%; }
+.footer-col:nth-child(4) { flex: 0 0 35%; } /* Wider column for contact/apps */
+
+
+.col-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.col-title-bold {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Links List */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #EB6753;
+}
+
+/* Contact Info (Column 4) */
+.contact-group {
+    margin-bottom: 25px;
+}
+
+.contact-group .col-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.contact-detail {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+/* Subscription Form */
+.subscribe-form {
+    display: flex;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.subscribe-form input {
+    flex-grow: 1;
+    border: none;
+    padding: 12px 15px;
+    font-size: 0.9rem;
+    color: #333;
+    outline: none;
+}
+
+.subscribe-form button {
+    background-color: #181A20;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #333538;
+}
+
+/* --- App Links CSS (Revised) --- */
+.app-links {
+    display: flex;
+    flex-direction: column;   /* stack vertically */
+    align-items: flex-start;  /* keep buttons left aligned */
+}
+
+.app-links .col-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.app-btn {
+    display: inline-flex;        /* 🔑 change from flex */
+    align-items: center;
+    background-color: #333538;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+    width: 180px;          /* 🔑 key fix */
+}
+
+
+.app-btn:hover {
+    background-color: #444;
+}
+
+.app-btn i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* NEW CONTAINER for the text */
+.app-text-group {
+    display: flex;
+    flex-direction: column; /* Stacks the label and store name */
+    line-height: 1.2;
+}
+
+/* Style for "Download on the" / "Get in on" */
+.app-label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #ccc; /* Slightly lighter color */
+}
+
+/* Style for "Apple Store" / "Google Play" (The bold, main text) */
+.app-store-name {
+    font-size: 1rem;
+    font-weight: 700; /* BOLD */
+    color: white;
+}
+/* --- Bottom Bar --- */
+.footer-bottom-bar {
+    border-top: 1px solid #333538;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.bottom-bar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.copyright {
+    color: #ccc;
+    margin: 0;
+}
+
+.legal-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.legal-links a:hover {
+    color: #EB6753;
+}
+
+/* =========================
+   FOOTER RESPONSIVE
+========================= */
+
+/* ---------- TABLET (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+
+    .footer-container,
+    .bottom-bar-container {
+        padding: 0 30px;
+    }
+
+    .footer-content-grid {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footer-col:nth-child(1),
+    .footer-col:nth-child(2),
+    .footer-col:nth-child(3) {
+        flex: 0 0 45%;
+    }
+
+    .footer-col:nth-child(4) {
+        flex: 0 0 100%;
+    }
+
+    .subscribe-form {
+        max-width: 500px;
+    }
+}
+
+/* ---------- MOBILE (≤ 768px) ---------- */
+@media (max-width: 768px) {
+
+    .main-footer {
+        padding-top: 40px;
+    }
+
+    /* Top row stack */
+    .footer-top-row {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    /* Footer grid stack */
+    .footer-content-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-col {
+        padding-right: 0;
+    }
+
+    .footer-col:nth-child(1),
+    .footer-col:nth-child(2),
+    .footer-col:nth-child(3),
+    .footer-col:nth-child(4) {
+        flex: 0 0 100%;
+    }
+
+    /* Subscribe form */
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input {
+        padding: 14px;
+    }
+
+    .subscribe-form button {
+        width: 100%;
+    }
+
+    /* App buttons */
+    .app-btn {
+        justify-content: center;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Bottom bar stack */
+    .bottom-bar-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .legal-links a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* ---------- SMALL MOBILE (≤ 480px) ---------- */
+@media (max-width: 480px) {
+
+    .footer-container,
+    .bottom-bar-container {
+        padding: 0 20px;
+    }
+
+    .logo-text {
+        font-size: 1.3rem;
+    }
+
+    .col-title,
+    .col-title-bold {
+        font-size: 0.95rem;
+    }
+
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+
+    .app-store-name {
+        font-size: 0.95rem;
+    }
+}
+</style>

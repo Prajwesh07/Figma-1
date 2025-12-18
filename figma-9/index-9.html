@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Figma/figma-9/assets/css/style.css">
+</head>
+<body class="transparent-navbar-page">
+        <div id="navbar">
+
+   <script>
+
+    fetch("../components/navbar.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("navbar").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+    <section class="header">
+
+    </section>
+
+
+<section class="featured-listings-section">
+    <div class="listings-container">
+
+<div class="filter-tabs-area">
+    <div class="filter-tabs">
+        
+        <button class="filter-tab active">
+            <svg class="filter-svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/> 
+            </svg> 
+            Houses
+        </button>
+        
+        <button class="filter-tab">
+            <svg class="filter-svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM5 19V5h3v14H5zm4 0v-8h6v8h-6zm7 0v-8h3v8h-3z"/>
+            </svg> 
+            Apartments
+        </button>
+        
+        <button class="filter-tab">
+            <svg class="filter-svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M10 16h4v4h-4zM2 20h20V4H2v16zm2-2V6h16v12H4z"/>
+            </svg> 
+            Office
+        </button>
+        
+        <button class="filter-tab">
+            <svg class="filter-svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M17 10h-2V7h-2v3h-2v2h2v3h2v-3h2V8h2zM12 3L2 12h3v8h14v-8h3L12 3zm0 5.14l4.24 4.24L12 16.63l-4.24-4.25L12 8.14z"/>
+            </svg>
+            Villa
+        </button>
+        
+        <button class="filter-tab">
+            <svg class="filter-svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8zM17 10h-2v2h-2v-2h-2v2H9v-2H7v2H5v-2H3v6h18v-6h-4z"/>
+            </svg> 
+            Townhome
+        </button>
+        
+        <button class="filter-tab">
+            <svg class="filter-svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M12 3L2 12h3v8h14v-8h3L12 3zm-2 15H7v-3h3v3zm-3-5V9h6v4H7zm7 0v-4h3v4h-3z"/>
+            </svg>
+            Bungalow
+        </button>
+        
+        <button class="filter-tab">
+            <svg class="filter-svg" viewBox="0 0 24 24" width="30" height="30">
+                <path d="M22 13v7h-3v-6H5v6H2v-7l10-7 10 7zM12 3L2 12h3v8h14v-8h3L12 3z"/>
+            </svg> 
+            Loft
+        </button>
+        
+    </div>
+</div>
+        
+        <div class="listings-header">
+            <div class="header-text">
+                <h2 class="section-heading">Discover Our Featured Listings</h2>
+                <p class="section-sub-text">Aliquam lacinia diam quis lacus euismod</p>
+            </div>
+            <a href="#" class="see-all-btn">See All Properties <span class="arrow-icon">↗</span></a>
+        </div>
+
+
+
+<div class="property-carousel">
+    <div class="property-card-track">
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-3U0nay963FU-unsplash.jpg" alt="House on the Hollywood" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$4,600</span>
+                <h3 class="listing-title">House on the Hollywood</h3>
+                <p class="listing-location">374 Johnson Ave</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 6 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 2 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 200 sqft</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-oVnKC7wiQjA-unsplash.jpg" alt="Comfortable Villa Green" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$5,800</span>
+                <h3 class="listing-title">Comfortable Villa Green</h3>
+                <p class="listing-location">178 Broadway, Brooklyn</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 9 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 3 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 600 sqft</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/archie-vQzX3RtJg8M-unsplash.jpg" alt="Quality House For Sale" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$7,500</span>
+                <h3 class="listing-title">Quality House For Sale</h3>
+                <p class="listing-location">873 Bedford Ave</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 10 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 2 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 500 sqft</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-oVnKC7wiQjA-unsplash.jpg" alt="Comfortable Villa Green" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$5,800</span>
+                <h3 class="listing-title">Comfortable Villa Green</h3>
+                <p class="listing-location">178 Broadway, Brooklyn</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 9 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 3 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 600 sqft</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-3U0nay963FU-unsplash.jpg" alt="House on the Hollywood" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$4,600</span>
+                <h3 class="listing-title">House on the Hollywood</h3>
+                <p class="listing-location">374 Johnson Ave</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 6 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 2 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 200 sqft</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+        
+    </div>
+</section>
+
+<section class="selling-options-section-list">
+    <div class="options-list-container">
+        
+        <div class="options-header-list">
+            <h2 class="section-heading">Let's find the right selling option for you</h2>
+            <p class="section-sub-text">Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+
+        <div class="services-list-grid">
+            
+            <div class="service-list-item">
+                <i class="service-icon fas fa-shield-alt"></i> 
+                <div class="service-content">
+                    <h3 class="card-title">Property Management</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+            </div>
+            
+            <div class="service-list-item">
+                <i class="service-icon fas fa-key"></i> 
+                <div class="service-content">
+                    <h3 class="card-title">Mortgage Services</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+            </div>
+            
+            <div class="service-list-item">
+                <i class="service-icon fas fa-sack-dollar"></i> 
+                <div class="service-content">
+                    <h3 class="card-title">Currency Services</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+            </div>
+            
+            <div class="service-list-item">
+                <i class="service-icon fas fa-credit-card"></i> 
+                <div class="service-content">
+                    <h3 class="card-title">Secure Payment</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+<section class="properties-by-cities-section">
+    <div class="cities-container">
+        
+        <div class="cities-header">
+            <div class="header-text">
+                <h2 class="section-heading">Properties By Cities</h2>
+                <p class="section-sub-text">Aliquam lacinia diam quis lacus euismod</p>
+            </div>
+            <a href="#" class="see-all-btn">See All Cities <span class="arrow-icon">↗</span></a>
+        </div>
+
+        <div class="city-cards-grid">
+            
+            <div class="city-card">
+                <div class="city-image-wrapper">
+                    <img src="assets/img/0f0f011777c9c9c6e8354294ba7a87c6e5fb6efc.jpg" alt="New York Skyline" class="city-image">
+                </div>
+                <div class="city-info">
+                    <h3 class="city-name">New York</h3>
+                    <p class="city-count">10 Properties</p>
+                </div>
+            </div>
+            
+            <div class="city-card">
+                <div class="city-image-wrapper">
+                    <img src="assets/img/2eb101c8ad01e2e20112b65ccd7a88ae9bb27853.jpg" alt="Chicago Skyline" class="city-image">
+                </div>
+                <div class="city-info">
+                    <h3 class="city-name">Chicago</h3>
+                    <p class="city-count">1 Property</p>
+                </div>
+            </div>
+
+            <div class="city-card">
+                <div class="city-image-wrapper">
+                    <img src="assets/img/5171c79300e79558ad5999daf575229b9abadf14.jpg" alt="San Diego View" class="city-image">
+                </div>
+                <div class="city-info">
+                    <h3 class="city-name">San Diego</h3>
+                    <p class="city-count">1 Property</p>
+                </div>
+            </div>
+            
+            <div class="city-card">
+                <div class="city-image-wrapper">
+                    <img src="assets/img/70981fb1b5cfbf4fdd7c5f3a246e8cce3a61edef.jpg" alt="San Francisco Cable Car" class="city-image">
+                </div>
+                <div class="city-info">
+                    <h3 class="city-name">San Francisco</h3>
+                    <p class="city-count">1 Property</p>
+                </div>
+            </div>
+
+            <div class="city-card">
+                <div class="city-image-wrapper">
+                    <img src="assets/img/9778fa893de53ef378d4a249f83a8f7bc9113b96.jpg" alt="Los Angeles Buildings" class="city-image">
+                </div>
+                <div class="city-info">
+                    <h3 class="city-name">Los Angeles</h3>
+                    <p class="city-count">2 Properties</p>
+                </div>
+            </div>
+            
+            <div class="city-card">
+                <div class="city-image-wrapper">
+                    <img src="assets/img/d1dcfe28dd305af7ea24343ad21f6b20a43179d9.jpg" alt="New Jersey Bridge" class="city-image">
+                </div>
+                <div class="city-info">
+                    <h3 class="city-name">New Jersey</h3>
+                    <p class="city-count">0 Properties</p>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</section>
+<section class="trusted-agents-section">
+    <div class="trusted-agents-container">
+        
+        <div class="agent-profiles-visuals">
+            
+            <div class="agent-list-card">
+                <span class="agent-count">200+ Exclusive Agents</span>
+                
+                <div class="agent-list">
+                    <div class="agent-list-item">
+                        <img src="https://via.placeholder.com/40x40?text=M" alt="Marvin McKinney" class="agent-avatar">
+                        <div class="agent-info">
+                            <h4 class="agent-name">Marvin McKinney</h4>
+                            <p class="agent-role">Designer</p>
+                        </div>
+                    </div>
+                    <div class="agent-list-item">
+                        <img src="https://via.placeholder.com/40x40?text=R" alt="Ralph Edwards" class="agent-avatar">
+                        <div class="agent-info">
+                            <h4 class="agent-name">Ralph Edwards</h4>
+                            <p class="agent-role">Designer</p>
+                        </div>
+                    </div>
+                    <div class="agent-list-item">
+                        <img src="https://via.placeholder.com/40x40?text=A" alt="Annette Black" class="agent-avatar">
+                        <div class="agent-info">
+                            <h4 class="agent-name">Annette Black</h4>
+                            <p class="agent-role">Designer</p>
+                        </div>
+                    </div>
+                    <div class="agent-list-item">
+                        <img src="https://via.placeholder.com/40x40?text=J" alt="Jane Cooper" class="agent-avatar">
+                        <div class="agent-info">
+                            <h4 class="agent-name">Jane Cooper</h4>
+                            <p class="agent-role">Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-profile-card">
+                <img src="assets/img/andrey-k-Oj8GEnX5EMA-unsplash.jpg" alt="Guy Hawkins" class="main-agent-image">
+                <h4 class="agent-name">Guy Hawkins</h4>
+                <p class="agent-role">Broker</p>
+            </div>
+            
+        </div>
+        
+        <div class="trusted-agents-content">
+            <h2 class="section-heading">Trusted By Best Exclusive Agents</h2>
+            <p class="section-sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            
+            <ul class="benefit-list">
+                <li><i class="fas fa-check-circle"></i> Find excellent deals</li>
+                <li><i class="fas fa-check-circle"></i> Friendly host & Fast support</li>
+                <li><i class="fas fa-check-circle"></i> List your own property</li>
+            </ul>
+            
+            <a href="#" class="see-more-btn-coral">
+                See More 
+                <span class="arrow-icon">↗</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+<!-- Realtor Help -->
+    <div class="help-section">
+      <h2>See How Realtor Can Help</h2>
+      <div class="subtitle">Aliquam lacinia diam quis lacus euismod</div>
+
+      <div class="help-cards">
+        <div class="help-card">
+          <img src="assets/img/icon1.svg.png" class="help-icon" />
+          <div class="help-title">Buy a property</div>
+          <div class="help-text">Nullam sollicitudin blandit eros eu pretium.<br/>Nullam maximus ultricies auctor.</div>
+          <button class="btn">Find a home ↗</button>
+        </div>
+
+        <div class="help-card active">
+          <img src="assets/img/icon2.svg.png" class="help-icon" />
+          <div class="help-title">Sell a property</div>
+          <div class="help-text">Nullam sollicitudin blandit eros eu pretium.<br/>Nullam maximus ultricies auctor.</div>
+          <button class="btn">Place an ad ↗</button>
+        </div>
+
+        <div class="help-card">
+          <img src="assets/img/icon3.svg.png" class="help-icon" />
+          <div class="help-title">Rent a property</div>
+          <div class="help-text">Nullam sollicitudin blandit eros eu pretium.<br/>Nullam maximus ultricies auctor.</div>
+          <button class="btn">Find a rental ↗</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="testimonials-section">
+    <div class="testimonials-container">
+        
+        <div class="testimonials-header">
+            <h2 class="section-heading">Testimonials</h2>
+            <p class="section-sub-text">Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+
+        <div class="quote-icon">66</div>
+
+        <div class="testimonial-content">
+            <p class="quote-text">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</p>
+            <h4 class="author-name">Ali Tufan</h4>
+            <p class="author-role">Product Manager</p>
+        </div>
+
+        <div class="testimonial-avatars">
+            <div class="avatar-wrapper">
+                <img src="assets/img/andrey-k-Oj8GEnX5EMA-unsplash.jpg" alt="Reviewer Avatar 1" class="avatar-image">
+            </div>
+            <div class="avatar-wrapper">
+                <img src="assets/img/2eb101c8ad01e2e20112b65ccd7a88ae9bb27853.jpg" alt="Reviewer Avatar 2" class="avatar-image">
+            </div>
+            <div class="avatar-wrapper active">
+                <img src="assets/img/1ff724f7157adfd7c3cd760bc8bee781ccc26fc4.jpg" alt="Reviewer Avatar 3" class="avatar-image">
+            </div>
+            <div class="avatar-wrapper">
+                <img src="assets/img/70981fb1b5cfbf4fdd7c5f3a246e8cce3a61edef.jpg" alt="Reviewer Avatar 4" class="avatar-image">
+            </div>
+            <div class="avatar-wrapper">
+                <img src="assets/img/archie-vQzX3RtJg8M-unsplash.jpg" alt="Reviewer Avatar 5" class="avatar-image">
+            </div>
+        </div>
+        
+    </div>
+</section>
+<section class="membership-section">
+    <div class="membership-container">
+        
+        <div class="membership-header">
+            <h2 class="section-heading">Membership Plans</h2>
+            <p class="section-sub-text">Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+
+        <div class="pricing-cards-grid">
+            
+            <div class="pricing-card">
+                <div class="card-header">
+                    <div class="price-details">
+                        <h3 class="plan-title">Professional</h3>
+                        <p class="plan-price">$599.00</p>
+                    </div>
+                        <div class="plan-image">
+        <img src="assets/img/9cc8cecb4796041325c2d8f5c1028e421954182f.png" alt="Plan Image">
+    </div>
+                </div>
+                
+                <p class="plan-description">Professional listing submission, active for 60 days</p>
+
+                <ul class="plan-features">
+                    <li><i class="fas fa-check-circle"></i> All Operating Supported</li>
+                    <li><i class="fas fa-check-circle"></i> 20 Property Listings</li>
+                    <li><i class="fas fa-check-circle"></i> 60 Days Availability</li>
+                    <li><i class="fas fa-check-circle"></i> Feature Properties</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Full support</li>
+                </ul>
+
+                <a href="#" class="add-to-cart-btn light">
+                    Add To Cart <span class="arrow-icon">↗</span>
+                </a>
+            </div>
+            
+            <div class="pricing-card highlighted">
+                <div class="card-header">
+                    <div class="price-details">
+                        <h3 class="plan-title">Business</h3>
+                        <p class="plan-price">$999.00</p>
+                    </div>
+                        <div class="plan-image">
+        <img src="assets/img/e33a5d1da9481d32e09b7786ed487e8891058b53.png" alt="Plan Image">
+    </div>
+                </div>
+                
+                <p class="plan-description">Business listing submission, active for 90 days</p>
+
+                <ul class="plan-features">
+                    <li><i class="fas fa-check-circle"></i> All Operating Supported</li>
+                    <li><i class="fas fa-check-circle"></i> 30 Property Listings</li>
+                    <li><i class="fas fa-check-circle"></i> 90 Days Availability</li>
+                    <li><i class="fas fa-check-circle"></i> Feature Properties</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Full support</li>
+                </ul>
+
+                <a href="#" class="add-to-cart-btn dark">
+                    Add To Cart <span class="arrow-icon">↗</span>
+                </a>
+            </div>
+            
+            <div class="pricing-card">
+<div class="card-header">
+    <div class="price-details">
+        <h3 class="plan-title">Basic</h3>
+        <p class="plan-price">Free</p>
+    </div>
+
+    <!-- Image Section (add your image here) -->
+    <div class="plan-image">
+        <img src="assets/img/406c54f4190aee2e6550f3fcaacb4b32a2fde2fc.png" alt="Plan Image">
+    </div>
+</div>
+
+                
+                <p class="plan-description">Basic listing submission, active for 30 days</p>
+
+                <ul class="plan-features">
+                    <li><i class="fas fa-check-circle"></i> All Operating Supported</li>
+                    <li><i class="fas fa-check-circle"></i> 10 Property Listings</li>
+                    <li><i class="fas fa-check-circle"></i> 30 Days Availability</li>
+                    <li><i class="fas fa-check-circle"></i> Feature Properties</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Full support</li>
+                </ul>
+
+                <a href="#" class="add-to-cart-btn light">
+                    Add To Cart <span class="arrow-icon">↗</span>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+
+    <section class="partners">
+        <div class="partners-container">
+            <p class="partners-text">Trusted by leading companies</p>
+            <div class="partners-logos">
+                <img src="assets/img/amazon.jpg" alt="Company 1">
+                <img src="assets/img/amd.jpg" alt="Company 2">
+                <img src="assets/img/cisco.jpg" alt="Company 3">
+                <img src="assets/img/dropcam.jpg" alt="Company 4">
+                <img src="assets/img/logitech.jpg" alt="Company 5">
+                <img src="assets/img/spotify.jpg" alt="Company 6">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="agent-cta-section">
+    <div class="agent-cta-container">
+        
+        <div class="agent-cta-content">
+            <h2 class="section-heading">Become A Real Estate Agent</h2>
+            <p class="section-sub-text">We only work with the best companies around the globe to survey</p>
+            
+            <a href="#" class="register-now-btn">
+                Register Now
+                <span class="arrow-icon">↗</span>
+            </a>
+        </div>
+
+        <div class="agent-cta-image-wrapper">
+            <img src="assets/img/3723b0dba9cdfc0870eafdd1563ac90da45ccd37 (1).png" alt="Smiling Real Estate Agent" class="agent-cta-image">
+        </div>
+        
+    </div>
+</section>
+
+<div id="footer">
+
+   <script>
+
+    fetch("../components/footer.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("footer").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

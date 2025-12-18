@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map View</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+      <div id="navbar">
+
+   <script>
+
+    fetch("../components/navbar.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("navbar").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+<section class="map-view-section">
+
+    <div class="map-container-area">
+<div class="map-placeholder">
+
+    <div class="map-resize-controls">
+        
+        <button id="map-maximize">+</button>
+        <button id="map-minimize">−</button>
+    </div>
+
+    <h2 class="map-title-overlay">Google Maps</h2>
+</div>
+
+    </div>
+
+    <!-- SEARCH FORM -->
+    <div class="map-search-form-wrapper">
+
+        <!-- TAB CONTAINER (SEPARATE) -->
+        <div class="map-search-tabs-container">
+            <button class="map-tab active">All</button>
+            <button class="map-tab">For Sale</button>
+            <button class="map-tab">For Rent</button>
+        </div>
+
+        <!-- SEARCH BOX -->
+        <div class="map-search-form-overlay">
+            <div class="map-search-fields">
+                <div class="form-group search-keyword">
+                    <label>Search</label>
+                    <input type="text" placeholder="Enter keyword">
+                </div>
+
+                <div class="form-group search-type">
+                    <label>Looking For</label>
+                    <select>
+                        <option>Any</option>
+                        <option>House</option>
+                    </select>
+                </div>
+
+                <button class="search-map-btn">🔍 Search</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <div class="help-section">
+      <h2>See How Realtor Can Help</h2>
+      <div class="subtitle">Aliquam lacinia diam quis lacus euismod</div>
+
+      <div class="help-cards">
+        <div class="help-card">
+          <img src="assets/img/icon1.svg.png" class="help-icon" />
+          <div class="help-title">Buy a property</div>
+          <div class="help-text">Nullam sollicitudin blandit eros eu pretium.<br/>Nullam maximus ultricies auctor.</div>
+          <button class="btn">Find a home →</button>
+        </div>
+
+        <div class="help-card active">
+          <img src="assets/img/icon2.svg.png" class="help-icon" />
+          <div class="help-title">Sell a property</div>
+          <div class="help-text">Nullam sollicitudin blandit eros eu pretium.<br/>Nullam maximus ultricies auctor.</div>
+          <button class="btn">Place an ad →</button>
+        </div>
+
+        <div class="help-card">
+          <img src="assets/img/icon3.svg.png" class="help-icon" />
+          <div class="help-title">Rent a property</div>
+          <div class="help-text">Nullam sollicitudin blandit eros eu pretium.<br/>Nullam maximus ultricies auctor.</div>
+          <button class="btn">Find a rental →</button>
+        </div>
+      </div>
+    </div>
+
+
+<section class="featured-section">
+  <div class="featured-header">
+    <div>
+      <h2>Discover Our Featured Listings</h2>
+      <p>Aliquam lacinia diam quis lacus euismod</p>
+    </div>
+
+    <a href="#" class="see-all">
+      See All Properties →
+    </a>
+  </div>
+
+<div class="swiper featured-swiper">
+  <div class="swiper-wrapper">
+
+    <!-- SLIDE -->
+    <div class="swiper-slide">
+      <div class="property-card">
+        <div class="property-img">
+          <span class="badge">FEATURED</span>
+          <img src="assets/img/avi-werde-hHz4yrvxwlA-unsplash.jpg">
+        </div>
+        <div class="property-body">
+          <h4>House on the Hollywood</h4>
+          <div class="price">$4,600</div>
+          <div class="property-info">
+            <span>6 Beds</span>
+            <span>2 Baths</span>
+            <span>200 sqft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="swiper-slide">
+      <div class="property-card">
+        <div class="property-img">
+          <span class="badge">FEATURED</span>
+          <img src="assets/img/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg">
+        </div>
+        <div class="property-body">
+          <h4>Comfortable Villa Green</h4>
+          <div class="price">$5,800</div>
+          <div class="property-info">
+            <span>9 Beds</span>
+            <span>3 Baths</span>
+            <span>600 sqft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="swiper-slide">
+      <div class="property-card">
+        <div class="property-img">
+          <span class="badge">FEATURED</span>
+          <img src="assets/img/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg">
+        </div>
+        <div class="property-body">
+          <h4>Comfortable Villa Green</h4>
+          <div class="price">$5,800</div>
+          <div class="property-info">
+            <span>9 Beds</span>
+            <span>3 Baths</span>
+            <span>600 sqft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- repeat slides -->
+    <div class="swiper-slide">
+      <div class="property-card">
+        <div class="property-img">
+          <span class="badge">FEATURED</span>
+          <img src="assets/img/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg">
+        </div>
+        <div class="property-body">
+          <h4>Comfortable Villa Green</h4>
+          <div class="price">$5,800</div>
+          <div class="property-info">
+            <span>9 Beds</span>
+            <span>3 Baths</span>
+            <span>600 sqft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="property-card">
+        <div class="property-img">
+          <span class="badge">FEATURED</span>
+          <img src="assets/img/john-fornander-tVzyDSV84w8-unsplash.jpg">
+        </div>
+        <div class="property-body">
+          <h4>Quality House</h4>
+          <div class="price">$2,500</div>
+          <div class="property-info">
+            <span>10 Beds</span>
+            <span>2 Baths</span>
+            <span>500 sqft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-pagination"></div>
+
+</section>
+<section class="container">
+<div class="grid">
+<!-- Image -->
+<div class="image-box">
+<img src="assets/img/191b2c2bd00e82d75c0ec9fd20c8275ff8c3f126.jpg" alt="Modern House" />
+<div class="rent-card">
+<div class="rent-icon">🏠</div>
+<div class="rent-text">
+<p>Total Rent</p>
+<h4>4,382 Unit</h4>
+</div>
+</div>
+</div>
+
+
+<!-- Content -->
+<div class="content">
+<h2>Why Choose Us</h2>
+<p>As the complexity of buildings to increase, the field of architecture.</p>
+
+
+<div class="feature">
+<div class="feature-icon">🔑</div>
+<div>
+<h4>Property Management</h4>
+<p>Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+</div>
+</div>
+
+
+<div class="feature">
+<div class="feature-icon">💳</div>
+<div>
+<h4>Mortgage Services</h4>
+<p>Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+</div>
+</div>
+
+
+<div class="feature">
+<div class="feature-icon">💱</div>
+<div>
+<h4>Currency Services</h4>
+<p>Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Stats -->
+<div class="stats">
+<div class="stat">
+<h3>4M</h3>
+<p>Award Winning</p>
+</div>
+<div class="stat">
+<h3>18K</h3>
+<p>Property Ready</p>
+</div>
+<div class="stat">
+<h3>23M</h3>
+<p>Happy Customer</p>
+</div>
+</div>
+</section>
+
+<section class="apt-section">
+  <!-- Header -->
+  <div class="apt-header">
+    <div class="apt-heading">
+      <h2>Explore Apartment Types</h2>
+      <p>Lorem ipsum dolor sit amet,</p>
+    </div>
+
+    <a href="#" class="apt-link">All Types ↗</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="apt-grid">
+    <div class="apt-card">
+      <img src="assets/img/4420479144735ffd9224dd436e47fa95337e2ee9.jpg" alt="Houses" class="apt-thumb" />
+      <div class="apt-info">
+        <h4>Houses</h4>
+        <span>7 Properties</span>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <img src="assets/img/58878a456c9080404ba702d4264c5ecdcac0ed90.jpg" alt="Apartments" class="apt-thumb" />
+      <div class="apt-info">
+        <h4>Apartments</h4>
+        <span>3 Properties</span>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <img src="assets/img/eaad2fed9c38deb5a47274cde03c8836b32c7120.jpg" alt="Office" class="apt-thumb" />
+      <div class="apt-info">
+        <h4>Office</h4>
+        <span>4 Properties</span>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <img src="assets/img/fa83cae07e8b2d1cf2f7a62e6c28a1afd9d17851.jpg" alt="Villa" class="apt-thumb" />
+      <div class="apt-info">
+        <h4>Villa</h4>
+        <span>4 Properties</span>
+      </div>
+    </div>
+
+    <div class="apt-card">
+      <img src="assets/img/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg" alt="Townhome" class="apt-thumb" />
+      <div class="apt-info">
+        <h4>Townhome</h4>
+        <span>2 Properties</span>
+      </div>
+    </div>
+
+
+        <div class="apt-card">
+      <img src="assets/img/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg" alt="Townhome" class="apt-thumb" />
+      <div class="apt-info">
+        <h4>Townhome</h4>
+        <span>2 Properties</span>
+      </div>
+    </div>
+         <div class="apt-card">
+      <img src="assets/img/eaad2fed9c38deb5a47274cde03c8836b32c7120.jpg" alt="Office" class="apt-thumb" />
+      <div class="apt-info">
+        <h4>Office</h4>
+        <span>4 Properties</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pagination dots -->
+  <div class="apt-dots">
+    <span class="apt-dot is-active"></span>
+    <span class="apt-dot"></span>
+    <span class="apt-dot"></span>
+    <span class="apt-dot"></span>
+    <span class="apt-dot"></span>
+  </div>
+</section>
+
+<section class="type-section">
+  <div class="type-container">
+    <h2>Explore Apartment Types</h2>
+    <p class="type-subtitle">Aliquam lacinia diam quis lacus euismod</p>
+
+    <div class="type-list">
+      <div class="type-item">
+        <div class="type-circle"></div>
+        <h4>Houses</h4>
+        <span>7 Properties</span>
+      </div>
+
+      <div class="type-item">
+        <div class="type-circle"></div>
+        <h4>Apartments</h4>
+        <span>3 Properties</span>
+      </div>
+
+      <div class="type-item">
+        <div class="type-circle"></div>
+        <h4>Office</h4>
+        <span>4 Properties</span>
+      </div>
+
+      <div class="type-item">
+        <div class="type-circle"></div>
+        <h4>Villa</h4>
+        <span>4 Properties</span>
+      </div>
+
+      <div class="type-item">
+        <div class="type-circle"></div>
+        <h4>Townhome</h4>
+        <span>2 Properties</span>
+      </div>
+    </div>
+
+    <div class="type-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+<section class="review-section">
+  <div class="review-container">
+
+    <!-- Header -->
+    <div class="review-header">
+      <div>
+        <h2>People Love Living with Homez</h2>
+        <p>Aliquam lacinia diam quis lacus euismod</p>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="review-grid">
+
+      <div class="review-card">
+        <h4>Great Work</h4>
+        <p class="review-text">
+          “At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti atque corrupti quos dolores et”
+        </p>
+
+        <div class="stars">★★★★★</div>
+
+        <div class="review-user">
+          <img src="https://i.pravatar.cc/60?img=1" alt="">
+          <div>
+            <strong>Ali Tufan</strong>
+            <span>Marketing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <h4>Good Job</h4>
+        <p class="review-text">
+          “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, totam rem aperiam”
+        </p>
+
+        <div class="stars">★★★★★</div>
+
+        <div class="review-user">
+          <img src="https://i.pravatar.cc/60?img=2" alt="">
+          <div>
+            <strong>Albert Flores</strong>
+            <span>Designer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <h4>Perfect</h4>
+        <p class="review-text">
+          “Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
+          cum soluta nobis est eligendi optio”
+        </p>
+
+        <div class="stars">★★★★★</div>
+
+        <div class="review-user">
+          <img src="https://i.pravatar.cc/60?img=3" alt="">
+          <div>
+            <strong>Robert Fox</strong>
+            <span>Developer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <h4>Work Hard</h4>
+        <p class="review-text">
+          “At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti atque”
+        </p>
+
+        <div class="stars">★★★★☆</div>
+
+        <div class="review-user">
+          <img src="https://i.pravatar.cc/60?img=4" alt="">
+          <div>
+            <strong>Marvin McKinney</strong>
+            <span>Marketing</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="review-dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+  </div>
+</section>
+
+<section class="agent-section">
+  <div class="agent-container">
+
+    <!-- Header -->
+    <div class="agent-header">
+      <div>
+        <h2>Our Exclusive Agents</h2>
+        <p>Aliquam lacinia diam quis lacus euismod</p>
+      </div>
+
+      <a href="#" class="agent-link">See All Agents ↗</a>
+    </div>
+
+    <!-- Agents -->
+    <div class="agent-slider">
+      <div class="agent-card">
+        <img src="https://i.pravatar.cc/300?img=11" alt="">
+        <h4>Ralph Johnson</h4>
+        <span>Manager</span>
+      </div>
+
+      <div class="agent-card">
+        <img src="https://i.pravatar.cc/300?img=32" alt="">
+        <h4>Lori Ramos</h4>
+        <span>Marketing</span>
+      </div>
+
+      <div class="agent-card">
+        <img src="https://i.pravatar.cc/300?img=45" alt="">
+        <h4>Jack Graham</h4>
+        <span>Marketing</span>
+      </div>
+
+      <div class="agent-card">
+        <img src="https://i.pravatar.cc/300?img=48" alt="">
+        <h4>Augusta Silva</h4>
+        <span>Leader Homez</span>
+      </div>
+
+      <div class="agent-card">
+        <img src="https://i.pravatar.cc/300?img=56" alt="">
+        <h4>Albert Flores</h4>
+        <span>Marketing</span>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="agent-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+  </div>
+</section>
+<section class="blog-section">
+  <div class="blog-container">
+
+    <!-- Header -->
+    <div class="blog-header">
+      <div>
+        <h2>From Our Blog</h2>
+        <p>Aliquam lacinia diam quis lacus euismod</p>
+      </div>
+
+      <a href="#" class="blog-link">See More Blog ↗</a>
+    </div>
+
+    <!-- Blog Cards -->
+    <div class="blog-grid">
+
+      <article class="blog-card">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="">
+          <div class="blog-date">
+            <span>Feb</span>
+            <strong>03</strong>
+          </div>
+        </div>
+        <span class="blog-category">Townhome</span>
+        <h3>Unveils the Best Canadian Cities for Biking and Walk</h3>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1560185127-6a8cbdc6e3b4" alt="">
+          <div class="blog-date">
+            <span>Feb</span>
+            <strong>03</strong>
+          </div>
+        </div>
+        <span class="blog-category">Villa</span>
+        <h3>Diamond Manor Apartment in the New York and Service</h3>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde" alt="">
+          <div class="blog-date">
+            <span>Feb</span>
+            <strong>03</strong>
+          </div>
+        </div>
+        <span class="blog-category">Townhome</span>
+        <h3>7 Simple Ways to Keep Your Kids’ Toys From Taking Over Your Home</h3>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<div id="footer">
+
+   <script>
+
+    fetch("../components/footer.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("footer").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

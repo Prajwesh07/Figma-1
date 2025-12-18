@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Homez Hero</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/figma6.css">
+</head>
+
+<body>
+
+
+  <div id="navbar">
+
+   <script>
+
+   fetch("../components/navbar.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("navbar").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+
+
+<!-- 1st page -->
+
+<section class="hero">
+<div class="hero-content">
+
+
+<h1>Find the perfect place to<br>Live with your family</h1>
+<p>Let's find a home that's perfect for you</p>
+
+
+<div class="search-wrapper">
+<div class="tabs">
+<div class="tab active">All</div>
+<div class="tab">For Sale</div>
+<div class="tab">For Rent</div>
+</div>
+
+
+<div class="search-box">
+<input type="text" placeholder="Enter an address, neighborhood, city, or ZIP code" />
+<div class="advanced">Advanced</div>
+<button class="search-btn">🔍</button>
+</div>
+</div>
+
+
+<div class="browse">Or browse featured categories:</div>
+
+
+</div>
+</section>
+
+
+<!-- 2nd page -->
+
+<section class="process-section">
+  <div class="process-wrapper">
+
+    <!-- LEFT CONTAINER -->
+    <div class="process-left">
+      <h2>The New Way to Find<br>Your Home</h2>
+      <p>
+        From as low as $10 per day with<br>
+        limited time offer discounts.
+      </p>
+
+      <button class="process-btn">
+        How it Works <span>↗</span>
+      </button>
+
+      <img src="assets/img/searching.jpg" alt="Illustration" class="process-illustration">
+    </div>
+
+    <!-- RIGHT CONTAINER -->
+    <div class="process-right">
+
+      <div class="process-card">
+        <span class="step">01</span>
+        <div class="icon">🔍</div>
+        <h4>Search Your Dream Home</h4>
+        <p>Get ready to launch your real estate website without...</p>
+      </div>
+
+      <div class="process-card">
+        <span class="step">02</span>
+        <div class="icon">🏠</div>
+        <h4>Choose The House You Like</h4>
+        <p>Get ready to launch your real estate website without...</p>
+      </div>
+
+      <div class="process-card">
+        <span class="step">03</span>
+        <div class="icon">📄</div>
+        <h4>Enquire About This Property</h4>
+        <p>Get ready to launch your real estate website without...</p>
+      </div>
+
+      <div class="process-card">
+        <span class="step">04</span>
+        <div class="icon">🔑</div>
+        <h4>Own Your Home</h4>
+        <p>Get ready to launch your real estate website without...</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- 3rd page -->
+
+
+<!--  -->
+
+<section class="figma-featured-section">
+  <div class="figma-featured-header">
+    <div>
+      <h2>Discover Our Featured Listings</h2>
+      <p>Aliquam lacinia diam quis lacus euismod</p>
+    </div>
+    <a href="#" class="figma-featured-link">
+      See All Properties ↗
+    </a>
+  </div>
+
+  <div class="figma-featured-grid">
+
+    <!-- CARD 1 -->
+    <div class="figma-property-card">
+      <div class="figma-card-image">
+        <span class="figma-badge">⚡ FEATURED</span>
+        <span class="figma-price">$4,600</span>
+        <img src="assets/img/feature1.jpg" alt="">
+      </div>
+
+      <div class="figma-card-body">
+        <h3>House on the Hollywood</h3>
+        <p class="figma-address">374 Johnson Ave</p>
+
+        <div class="figma-meta">
+          <span>🛏 6 Beds</span>
+          <span>🛁 2 Baths</span>
+          <span>📐 200 sqft</span>
+        </div>
+
+        <div class="figma-card-footer">
+          <span class="figma-sale">For Sale</span>
+          <div class="figma-actions">
+            <button>↗</button>
+            <button>♡</button>
+            <button>▢</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="figma-property-card">
+      <div class="figma-card-image">
+        <span class="figma-badge">⚡ FEATURED</span>
+        <span class="figma-price">$5,800</span>
+        <img src="assets/img/feature2.jpg" alt="">
+      </div>
+
+      <div class="figma-card-body">
+        <h3>Comfortable Villa Green</h3>
+        <p class="figma-address">178 Broadway, Brooklyn</p>
+
+        <div class="figma-meta">
+          <span>🛏 9 Beds</span>
+          <span>🛁 3 Baths</span>
+          <span>📐 600 sqft</span>
+        </div>
+
+        <div class="figma-card-footer">
+          <span class="figma-sale">For Sale</span>
+          <div class="figma-actions">
+            <button>↗</button>
+            <button>♡</button>
+            <button>▢</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="figma-property-card">
+      <div class="figma-card-image">
+        <span class="figma-badge">⚡ FEATURED</span>
+        <span class="figma-price">$2,500</span>
+        <img src="assets/img/feature3.jpg" alt="">
+      </div>
+
+      <div class="figma-card-body">
+        <h3>Quality House For Sale</h3>
+        <p class="figma-address">873 Bedford Ave</p>
+
+        <div class="figma-meta">
+          <span>🛏 10 Beds</span>
+          <span>🛁 2 Baths</span>
+          <span>📐 500 sqft</span>
+        </div>
+
+        <div class="figma-card-footer">
+          <span class="figma-sale">For Sale</span>
+          <div class="figma-actions">
+            <button>↗</button>
+            <button>♡</button>
+            <button>▢</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="figma-property-card">
+      <div class="figma-card-image">
+        <span class="figma-badge">⚡ FEATURED</span>
+        <span class="figma-price">$4,500</span>
+        <img src="assets/img/feature4.jpg" alt="">
+      </div>
+
+      <div class="figma-card-body">
+        <h3>Diamond Family Home</h3>
+        <p class="figma-address">254 S 2nd St, Brooklyn</p>
+
+        <div class="figma-meta">
+          <span>🛏 4 Beds</span>
+          <span>🛁 2 Baths</span>
+          <span>📐 300 sqft</span>
+        </div>
+
+        <div class="figma-card-footer">
+          <span class="figma-sale">For Sale</span>
+          <div class="figma-actions">
+            <button>↗</button>
+            <button>♡</button>
+            <button>▢</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--4th-->
+ 
+
+<section class="cities-section">
+  <div class="cities-header">
+    <div>
+      <h2>Explore Cities</h2>
+      <p>Aliquam lacinia diam quis lacus euismod</p>
+    </div>
+    <a href="#" class="all-cities">All Cities ↗</a>
+  </div>
+
+  <div class="cities-grid">
+
+    <!-- CARD -->
+    <div class="city-card">
+      <div class="city-map">
+        <img src="assets/img/1map.jpg">
+        <div class="city-icon"></div>
+      </div>
+      <h4>Los Angeles</h4>
+      <span>2 Properties</span>
+    </div>
+
+    <div class="city-card">
+      <div class="city-map">
+        <img src="assets/img/2map.jpg">
+        <div class="city-icon"></div>
+      </div>
+      <h4>San Francisco</h4>
+      <span>1 Property</span>
+    </div>
+
+    <div class="city-card">
+      <div class="city-map">
+        <img src="assets/img/3map.jpg" >
+        <div class="city-icon"></div>
+      </div>
+      <h4>New York</h4>
+      <span>10 Properties</span>
+    </div>
+
+    <div class="city-card">
+      <div class="city-map">
+        <img src="assets/img/4map.jpg">
+        <div class="city-icon"></div>
+      </div>
+      <h4>Chicago</h4>
+      <span>1 Property</span>
+    </div>
+
+  </div>
+
+  <!-- DOTS -->
+  <div class="dots">
+    <span></span><span class="active"></span><span></span>
+  </div>
+
+</section>
+
+
+
+<!--5ht-->
+
+
+
+<section class="selling-section">
+  <div class="selling-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="selling-left">
+      <h2>Let’s Find The Right<br> Selling Option For You</h2>
+
+      <p class="desc">
+        As the complexity of buildings to increase, the field of architecture.
+      </p>
+
+      <ul class="features">
+        <li>Find excellent deals</li>
+        <li>Friendly host & Fast support</li>
+        <li>List your own property</li>
+      </ul>
+
+      <a href="#" class="learn-btn">Learn More ↗</a>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="selling-right">
+
+      <div class="image-stack">
+        <img src="assets/img/sell1.jpg" class="small-img" alt="">
+        <img src="assets/img/sell2.jpg" class="big-img" alt="">
+      </div>
+
+      <!-- FLOAT CARD -->
+      <div class="agent-card">
+        <p>10k+ Exclusive Agents</p>
+        <div class="avatars">
+          <img src="assets/img/model1.jpg">
+          <img src="assets/img/model2.jpg">
+          <img src="assets/img/model3.jpg">
+          <span>+</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- 6th page -->
+
+  <section class="testimonials-section">
+    <div class="container">
+
+        <h2 class="title">Testimonials</h2>
+        <p class="subtitle">Aliquam lacinia diam quis lacus euismod</p>
+
+        <div class="quote-icon">“</div>
+
+        <p class="testimonial-text">
+            What a great experience! I have visited one of the workshops and
+            attended a masterclass, and both were super useful for young
+            designers. Highly recommended.
+        </p>
+
+        <div class="author">
+            <h4>Ali Tufan</h4>
+            <span>Product Manager</span>
+        </div>
+
+        <div class="avatars">
+            <img src="https://i.pravatar.cc/100?img=1" alt="">
+            <img src="https://i.pravatar.cc/100?img=2" alt="">
+            <img class="active" src="https://i.pravatar.cc/100?img=3" alt="">
+            <img src="https://i.pravatar.cc/100?img=4" alt="">
+            <img src="https://i.pravatar.cc/100?img=5" alt="">
+        </div>
+
+    </div>
+</section>
+   
+<!--7th-->
+
+<section class="featured-section">
+  <div class="section-header">
+    <h2>Featured Properties</h2>
+    <p>Aliquam lacinia diam quis lacus euismod</p>
+  </div>
+
+  <div class="featured-wrapper">
+
+    <!-- LEFT CARD -->
+    <div class="property-card">
+
+      <div class="badges">
+        <span class="badge featured">FEATURED</span>
+        <span class="badge sale">FOR SALE</span>
+      </div>
+
+      <h3>Comfortable Villa Green</h3>
+      <p class="location">178 Broadway, Brooklyn</p>
+
+      <div class="features">
+        <div class="feature">9 Beds</div>
+        <div class="feature">3 Baths</div>
+        <div class="feature">600 sqft</div>
+      </div>
+
+      <div class="contact">
+        <div>
+          <span>Total Free Customer Care</span>
+          <strong>(+88)123-555-888</strong>
+        </div>
+        <div>
+          <span>Live Support?</span>
+          <strong>agent@apus.com</strong>
+        </div>
+      </div>
+
+      <div class="bottom-row">
+        <div class="price">$5,800</div>
+
+        <div class="icons">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="image-card">
+      <img src="assets/img/greenvilla.jpg">
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- 8th card-->
+
+  
+
+<section class="membership-section">
+
+  <div class="section-head">
+    <h2>Membership Plans</h2>
+    <p>Aliquam lacinia diam quis lacus euismod</p>
+  </div>
+
+  <div class="plans">
+
+    <!-- PROFESSIONAL -->
+    <div class="plan-card">
+      <img class="corner-icon" src="assets/img/icon1.png" alt="icon">
+
+      <h3>Professional</h3>
+      <h1>$599.00</h1>
+
+      <p class="desc">
+        Professional listing submission, active for 60 days
+      </p>
+
+      <ul>
+        <li>All Operating Supported</li>
+        <li>20 Property Listings</li>
+        <li>60 Days Availability</li>
+        <li>Feature Properties</li>
+        <li>24/7 Full support</li>
+      </ul>
+
+      <button class="btn outline">Add To Cart ↗</button>
+    </div>
+
+    <!-- BUSINESS -->
+    <div class="plan-card featured">
+      <img class="corner-icon" src="assets/img/icon2.png" alt="icon">
+
+      <h3 class="highlight">Business</h3>
+      <h1>$999.00</h1>
+
+      <p class="desc">
+        Business listing submission, active for 90 days
+      </p>
+
+      <ul>
+        <li>All Operating Supported</li>
+        <li>30 Property Listings</li>
+        <li>90 Days Availability</li>
+        <li>Feature Properties</li>
+        <li>24/7 Full support</li>
+      </ul>
+
+      <button class="btn filled">Add To Cart ↗</button>
+    </div>
+
+    <!-- BASIC -->
+    <div class="plan-card">
+      <img class="corner-icon" src="assets/img/icon3.png" alt="icon">
+
+      <h3>Basic</h3>
+      <h1 class="free">Free</h1>
+
+      <p class="desc">
+        Basic listing submission, active for 30 days
+      </p>
+
+      <ul>
+        <li>All Operating Supported</li>
+        <li>10 Property Listings</li>
+        <li>30 Days Availability</li>
+        <li>Feature Properties</li>
+        <li>24/7 Full support</li>
+      </ul>
+
+      <button class="btn outline">Add To Cart ↗</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+   <!--9th-->
+
+
+   <section class="figma-agents-section">
+
+  <!-- HEADER -->
+  <div class="figma-agents-header">
+    <div class="figma-agents-title">
+      <h2>Our Exclusive Agents</h2>
+      <p>Aliquam lacinia diam quis lacus euismod</p>
+    </div>
+
+    <a href="#" class="figma-agents-link">
+      See All Agents ↗
+    </a>
+  </div>
+
+  <!-- AGENTS -->
+  <div class="figma-agents-row">
+
+    <div class="figma-agent-card">
+      <img src="assets/img/model1.jpg">
+      <h4>Ralph Johnson</h4>
+      <span>Manager</span>
+    </div>
+
+    <div class="figma-agent-card">
+      <img src="assets/img/model2.jpg"">
+      <h4>Lori Ramos</h4>
+      <span>Marketing</span>
+    </div>
+
+    <div class="figma-agent-card">
+      <img src="assets/img/model3.jpg"">
+      <h4>Jack Graham</h4>
+      <span>Marketing</span>
+    </div>
+
+    <div class="figma-agent-card">
+      <img src="assets/img/model4.jpg">
+      <h4>Augusta Silva</h4>
+      <span>Leader Homez</span>
+    </div>
+
+    <div class="figma-agent-card">
+      <img src="assets/img/model5.jpg" alt="">
+      <h4>Albert Flores</h4>
+      <span>Marketing</span>
+    </div>
+
+  </div>
+
+  <!-- DOTS -->
+  <div class="figma-agents-dots">
+    <span class="active"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</section>
+
+<!-- 10 page-->
+
+
+
+<section class="figma-app-download-section">
+    <div class="figma-app-download-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="figma-app-download-image">
+            <img src="assets/img/portfolio.png" alt="App Preview">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="figma-app-download-content">
+
+            <span class="figma-app-download-badge">Start today</span>
+
+            <h2 class="figma-app-download-title">
+                Download the App
+            </h2>
+
+            <p class="figma-app-download-text">
+                Take classes on the go with the realton app. Stream or
+                download to watch on the plane, the subway, or wherever
+                you learn best.
+            </p>
+
+            <div class="figma-app-download-buttons">
+                <a href="#" class="figma-app-store-btn">
+                    <span>Download on the</span>
+                    <strong>Apple Store</strong>
+                </a>
+
+                <a href="#" class="figma-play-store-btn">
+                    <span>Get it on</span>
+                    <strong>Google Play</strong>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<div id="footer">
+
+   <script>
+
+    fetch("../components/footer.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("footer").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+
+  
+</body>
+</html>

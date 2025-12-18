@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Search UI - Exact Match</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/figma3.css">
+</head>
+<body>
+
+    <div id="navbar">
+
+   <script>
+
+    fetch("../components/navbar.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("navbar").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+
+
+    <!-- 1-->
+ <section class="hero-section">
+  <div class="hero-wrapper">
+
+    <div class="content-panel">
+      <h1 class="main-title">
+        Find The Perfect Place to <br>Live With your Family
+      </h1>
+
+      <div class="tabs">
+        <button class="active">All</button>
+        <button>For Sale</button>
+        <button>For Rent</button>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Enter an address, neighborhood, city, or ZIP code">
+        <span class="advanced">⚙️ Advanced</span>
+        <button class="search-btn">🔍</button>
+      </div>
+
+      <div class="categories">
+        <div>🏠 Houses</div>
+        <div>🏢 Apartments</div>
+        <div>🏬 Office</div>
+        <div>🏡 Villa</div>
+      </div>
+    </div>
+
+    <div class="image-panel">
+      <img src="assets/img/figma3img.png" alt="House">
+    </div>
+
+  </div>
+</section>
+
+
+ <!-- 2nd page -->
+
+
+      <section class="partners">
+        <div class="partners-container">
+            <p class="partners-text">Trusted by leading companies</p><br><br>
+    
+            <div class="partners-logos">
+                <img src="assets/img/amazon.jpg" alt="Company 1">
+                <img src="assets/img/amd.jpg" alt="Company 2">
+                <img src="assets/img/cisco.jpg" alt="Company 3">
+                <img src="assets/img/dropcam.jpg" alt="Company 4">
+                <img src="assets/img/logitech.jpg" alt="Company 5">
+                <img src="assets/img/spotify.jpg" alt="Company 6">
+            </div>
+        </div>
+    </section>
+
+  <!-- 3rd page -->
+
+
+
+<!-- PROPERTIES BY CITIES SECTION -->
+<section class="cities-section">
+    <div class="cities-header">
+        <div>
+            <h2>Properties By Cities</h2>
+            <p>Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+
+        <a href="#" class="see-all">
+            See All Cities →
+        </a>
+    </div>
+
+    <div class="cities-grid">
+        <!-- Card 1 -->
+        <div class="city-card">
+            <img src="assets/img/city2.jpg">
+            <div class="city-info">
+                <h4>New York</h4>
+                <p>10 Properties</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="city-card">
+            <img src="assets/img/city3.jpg">
+            <div class="city-info">
+                <h4>Chicago</h4>
+                <p>1 Property</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="city-card">
+            <img src="assets/img/city4.jpg">
+            <div class="city-info">
+                <h4>Manhattan</h4>
+                <p>0 Properties</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="city-card">
+            <img src="assets/img/city5.jpg">
+            <div class="city-info">
+                <h4>San Diego</h4>
+                <p>1 Property</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="city-card">
+            <img src="assets/img/city6.jpg">
+            <div class="city-info">
+                <h4>San Francisco</h4>
+                <p>1 Property</p>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="city-card">
+            <img src="assets/img/city7.jpg">
+            <div class="city-info">
+                <h4>Los Angeles</h4>
+                <p>2 Properties</p>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="city-card">
+            <img src="assets/img/city8.jpg">
+            <div class="city-info">
+                <h4>California</h4>
+                <p>0 Properties</p>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="city-card">
+            <img src="assets/img/city1 (2).jpg">
+            <div class="city-info">
+                <h4>New Jersey</h4>
+                <p>0 Properties</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- 4th page -->
+
+     <section class="apartment-type-section">
+    <div class="apt-header">
+        <h2>Explore Apartment Types</h2>
+        <p>Aliquam lacinia diam quis lacus euismod</p>
+    </div>
+
+    <div class="apt-types-container">
+
+        <div class="apt-card">
+            <div class="circle"></div>
+            <h4>Houses</h4>
+            <p>7 Properties</p>
+        </div>
+
+        <div class="apt-card">
+            <div class="circle"></div>
+            <h4>Apartments</h4>
+            <p>3 Properties</p>
+        </div>
+
+        <div class="apt-card">
+            <div class="circle"></div>
+            <h4>Office</h4>
+            <p>4 Properties</p>
+        </div>
+
+        <div class="apt-card">
+            <div class="circle"></div>
+            <h4>Villa</h4>
+            <p>4 Properties</p>
+        </div>
+
+        <div class="apt-card">
+            <div class="circle"></div>
+            <h4>Townhome</h4>
+            <p>2 Properties</p>
+        </div>
+
+    </div>
+
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+ <!-- 5th -->
+
+<section class="why-choose-section">
+
+    <!-- Left Side Image -->
+    <div class="why-left">
+        <img src="assets/img/architech2.jpg" alt="Why Choose Us Image">
+    </div>
+
+    <!-- Right Side Content -->
+    <div class="why-right">
+        <h2>Why Choose Us</h2>
+        <p class="why-desc">
+            As the complexity of buildings to increase, the field <br>
+            of architecture.
+        </p>
+
+        <div class="why-box">
+            <div class="icon-circle">
+                <img src="assets/img/icon1.png" alt="">
+            </div>
+            <div>
+                <h4>Property Management</h4>
+                <p>Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+            </div>
+        </div>
+
+        <div class="why-box">
+            <div class="icon-circle light">
+                <img src="assets/img/icon2.png" alt="">
+            </div>
+            <div>
+                <h4>Mortgage Services</h4>
+                <p>Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+            </div>
+        </div>
+
+        <div class="why-box">
+            <div class="icon-circle">
+                <img src="assets/img/icon3.png" alt="">
+            </div>
+            <div>
+                <h4>Currency Services</h4>
+                <p>Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- 6th page -->
+
+<section class="experience-section">
+
+    <div class="left-box">
+        <h2>More than 10 Years of Experience</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+
+        <div class="stats">
+            <div class="stat-item">
+                <h3>85%</h3>
+                <span>Completed Property</span>
+            </div>
+            <div class="stat-item">
+                <h3>99%</h3>
+                <span>Satisfied Customers</span>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <span>Home ownership</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-box">
+        <div class="testimonial-card">
+            <h4>Awesome Design</h4>
+
+            <p class="review">
+                “Amazing design, easy to customize and a design quality superlative <br>
+                account on its cloud platform for the optimized performance. <br>
+                And we didn't on our original designs.”
+            </p>
+
+            <div class="stars">
+                ★ ★ ★ ★ ★
+            </div>
+
+            <div class="profile">
+                <img src="https://i.ibb.co/5LHDJ7J/profile.jpg" />
+                <div>
+                    <h5>Ali Tufan</h5>
+                    <span>Product Manager</span>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+</section>
+
+
+<!-- 7th -->
+<section class="inquiry-section">
+
+    <div class="form-box">
+        <h2>Real Estate Inquiry Form</h2>
+        <p class="subtitle">As the complexity of buildings to increase</p>
+
+        <form>
+
+            <label>Inquiry Type</label>
+            <select>
+                <option>—Please choose an option—</option>
+            </select>
+
+            <div class="two-col">
+                <div>
+                    <label>How to address</label>
+                    <select>
+                        <option>—Please choose an option—</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Your Name">
+                </div>
+            </div>
+
+            <label>Email</label>
+            <input type="email" placeholder="example@gmail.com">
+
+            <label>Personnel Role</label>
+            <select>
+                <option>—Please choose an option—</option>
+            </select>
+
+            <div class="two-col">
+                <div>
+                    <label>Max Price</label>
+                    <input type="text" placeholder="$90">
+                </div>
+                <div>
+                    <label>Min Size (Sq ft)</label>
+                    <input type="text" placeholder="20">
+                </div>
+            </div>
+
+            <button class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <div class="image-box">
+        <img src="assets/img/form img.jpg" alt="">
+    </div>
+
+</section>
+
+ <!-- 8th -->
+<section class="blog-section" aria-label="From Our Blog">
+  <div class="blog-header">
+    <h2>From Our Blog</h2>
+    <p>Aliquam lacinia diam quis lacus euismod</p>
+  </div>
+
+  <div class="cards-row" role="list">
+    <!-- Card 1 -->
+    <article class="blog-card" role="listitem" aria-label="Townhome post">
+      <figure class="card-image" aria-hidden="true">
+        <!-- Unsplash modern house image -->
+        <img src="assets/img/image1.jpg" alt="Modern house exterior">
+        <figcaption class="date-badge" aria-hidden="true"><span class="month">Feb</span><span class="day">03</span></figcaption>
+      </figure>
+
+      <div class="card-body">
+        <div>
+          <div class="card-meta">Townhome</div>
+          <div class="card-title">Unveils the Best Canadian Cities for Biking and Walk</div>
+          <div class="card-excerpt">Short intro text shown here to represent the blog excerpt. Keep it concise like in the Figma.</div>
+        </div>
+
+        <div class="card-footer">
+          <div class="type">Blog</div>
+          <div class="card-icons" aria-hidden="true">
+            <div class="icon">🔗</div>
+            <div class="icon">♡</div>
+            <div class="icon">⤓</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="blog-card" role="listitem" aria-label="Villa post">
+      <figure class="card-image" aria-hidden="true">
+        <img src="assets/img/image2.jpg" alt="Villa exterior">
+        <figcaption class="date-badge" aria-hidden="true"><span class="month">Feb</span><span class="day">03</span></figcaption>
+      </figure>
+
+      <div class="card-body">
+        <div>
+          <div class="card-meta">Villa</div>
+          <div class="card-title">Diamond Manor Apartment in the New York and Service</div>
+          <div class="card-excerpt">Short intro text shown here to represent the blog excerpt. Keep it concise like in the Figma.</div>
+        </div>
+
+        <div class="card-footer">
+          <div class="type">Blog</div>
+          <div class="card-icons" aria-hidden="true">
+            <div class="icon">🔗</div>
+            <div class="icon">♡</div>
+            <div class="icon">⤓</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="blog-card" role="listitem" aria-label="Townhome post 2">
+      <figure class="card-image" aria-hidden="true">
+        <img src="assets/img/image3.jpg" alt="Luxury townhouse">
+        <figcaption class="date-badge" aria-hidden="true"><span class="month">Feb</span><span class="day">03</span></figcaption>
+      </figure>
+
+      <div class="card-body">
+        <div>
+          <div class="card-meta">Townhome</div>
+          <div class="card-title">7 Simple Ways to Keep Your Kids' Toys From Taking Over Your Home</div>
+          <div class="card-excerpt">Short intro text shown here to represent the blog excerpt. Keep it concise like in the Figma.</div>
+        </div>
+
+        <div class="card-footer">
+          <div class="type">Blog</div>
+          <div class="card-icons" aria-hidden="true">
+            <div class="icon">🔗</div>
+            <div class="icon">♡</div>
+            <div class="icon">⤓</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  </section>
+
+ <!-- 9th -->
+
+  
+  <section class="agent-section">
+
+  <div class="agent-wrapper">
+
+    <div class="left-content">
+      <h2>Become A Real Estate Agent</h2>
+      <p>We only work with the best companies around the globe to survey</p>
+
+      <button class="register-btn">
+        Register Now <span class="arrow">↗</span>
+      </button>
+    </div>
+
+    <div class="right-content">
+      <img src="assets/img/standman.png" alt="Agent Photo">
+    </div>
+
+  </div>
+
+</section>
+
+ 
+<div id="footer">
+
+   <script>
+
+    fetch("../components/footer.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("footer").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma - 8 HomePage</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <div id="navbar">
+
+   <script>
+
+    fetch("../components/navbar.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("navbar").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+<div class="menu-toggle">
+    <span class="line top"></span>
+    <span class="line bottom"></span>
+</div>
+    <div class="left-strip">
+
+        <div class="contact-text">
+            <p class="strip-text phone">(+88) 123 456 789</p>
+            <p class="strip-text email">example@gmail.com</p>
+        </div>
+
+<div class="social-icons">
+    <a href="#" class="fab fa-linkedin-in"></a>
+    <a href="#" class="fab fa-instagram"></a>
+    <a href="#" class="fab fa-twitter"></a>
+    <a href="#" class="fab fa-facebook-f"></a>
+</div>
+    </div>
+
+    <section class="header">
+        <div class="header-content">
+            <!-- Left Text Box -->
+            <div class="text-box">
+                <h3>THE BEST WAY TO</h3>
+                <h1>Find your happy</h1>
+                <h3>Search properties for sale and to rent in the UK</h3>
+            </div>
+
+            <!-- Right Form Box -->
+            <div class="search-form-container">
+                <div class="tabs">
+                    <div class="tab active">All</div>
+                    <div class="tab">For Sale</div>
+                    <div class="tab">For Rent</div>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <select name="property-type" aria-label="Property Type">
+                            <option value="" disabled selected>Property Type</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="condo">Condo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="location" aria-label="Location">
+                            <option value="" disabled selected>Location</option>
+                            <option value="newyork">New York</option>
+                            <option value="sanfrancisco">San Francisco</option>
+                            <option value="losangeles">Los Angeles</option>
+                        </select>
+                    </div>
+
+                    <div class="price-range">
+                        <span>$0</span>
+                        <span>-</span>
+                        <span>$5,800</span>
+                    </div>
+
+                    <div class="advanced" tabindex="0" role="button" aria-pressed="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M10 18h4v-2h-4v2zm-6-6h16v-2H4v2zm3-6v2h10V6H7z"/>
+                        </svg>
+                        <span>Advanced</span>
+                    </div>
+
+                    <button type="submit" class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.33 5.09 12.28 2 8.5 2S1.67 5.09 1.67 8.39 4.72 14.78 8.5 14.78c1.61 0 3.09-.59 4.23-1.56l.27.28v.79l5 4.99L20.49 19l-4.99-5z"/>
+                        </svg>
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="partners-container">
+            <p class="partners-text">Trusted by leading companies</p>
+            <div class="partners-logos">
+                <img src="assets/img/amazon.png" alt="Company 1">
+                <img src="assets/img/amd.png" alt="Company 2">
+                <img src="assets/img/cisco.png" alt="Company 3">
+                <img src="assets/img/dropcam.png" alt="Company 4">
+                <img src="assets/img/logitech.png" alt="Company 5">
+                <img src="assets/img/spotify.png" alt="Company 6">
+            </div>
+        </div>
+    </section>
+
+<section class="featured-listings-section">
+    <div class="listings-container">
+
+        
+        <div class="listings-header">
+            <div class="header-text">
+                <h2 class="section-heading">Discover Our Featured Listings</h2>
+                <p class="section-sub-text">Aliquam lacinia diam quis lacus euismod</p>
+            </div>
+            <a href="#" class="see-all-btn">See All Properties <span class="arrow-icon">↗</span></a>
+        </div>
+
+
+
+<div class="property-carousel">
+    <div class="property-card-track">
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-3U0nay963FU-unsplash.jpg" alt="House on the Hollywood" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$4,600</span>
+                <h3 class="listing-title">House on the Hollywood</h3>
+                <p class="listing-location">374 Johnson Ave</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 6 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 2 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 200 sqft</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-oVnKC7wiQjA-unsplash.jpg" alt="Comfortable Villa Green" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$5,800</span>
+                <h3 class="listing-title">Comfortable Villa Green</h3>
+                <p class="listing-location">178 Broadway, Brooklyn</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 9 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 3 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 600 sqft</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/archie-vQzX3RtJg8M-unsplash.jpg" alt="Quality House For Sale" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$7,500</span>
+                <h3 class="listing-title">Quality House For Sale</h3>
+                <p class="listing-location">873 Bedford Ave</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 10 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 2 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 500 sqft</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-oVnKC7wiQjA-unsplash.jpg" alt="Comfortable Villa Green" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$5,800</span>
+                <h3 class="listing-title">Comfortable Villa Green</h3>
+                <p class="listing-location">178 Broadway, Brooklyn</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 9 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 3 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 600 sqft</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-3U0nay963FU-unsplash.jpg" alt="House on the Hollywood" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$4,600</span>
+                <h3 class="listing-title">House on the Hollywood</h3>
+                <p class="listing-location">374 Johnson Ave</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 6 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 2 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 200 sqft</div>
+                </div>
+            </div>
+        </div>
+
+                <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-3U0nay963FU-unsplash.jpg" alt="House on the Hollywood" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$4,600</span>
+                <h3 class="listing-title">House on the Hollywood</h3>
+                <p class="listing-location">374 Johnson Ave</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 6 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 2 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 200 sqft</div>
+                </div>
+            </div>
+        </div>
+
+                <div class="listing-card">
+            <div class="listing-image-wrapper">
+                <img src="assets/img/kadek-wahyudi-3U0nay963FU-unsplash.jpg" alt="House on the Hollywood" class="listing-image">
+                <span class="listing-badge featured">FEATURED</span>
+            </div>
+            <div class="listing-details">
+                <span class="listing-price">$4,600</span>
+                <h3 class="listing-title">House on the Hollywood</h3>
+                <p class="listing-location">374 Johnson Ave</p>
+                <div class="listing-specs">
+                    <div class="spec-item"><span class="spec-icon"></span> 6 Beds</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 2 Baths</div>
+                    <div class="spec-item"><span class="spec-icon"></span> 200 sqft</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+        
+    </div>
+</section>
+
+<section class="featured-homes">
+  <div class="featured-header">
+    <div class="title-group">
+      <h2>Featured Homes</h2>
+      <p>Aliquam lacinia diam quis lacus euismod</p>
+    </div>
+    <a href="#" class="all-types">
+      All Types <span class="arrow">↗</span>
+    </a>
+  </div>
+
+  <div class="homes-grid">
+    <div class="home-card">
+      <img src="assets/img/bulding1.jpg" alt="Apartments for sale">
+      <div class="card-text">
+        <h3>Apartments for sale</h3>
+        <p>3 Properties</p>
+      </div>
+    </div>
+
+    <div class="home-card">
+      <img src="assets/img/building2.jpg" alt="Single family homes for sale">
+      <div class="card-text">
+        <h3>Single family homes for sale</h3>
+        <p>7 Properties</p>
+      </div>
+    </div>
+
+    <div class="home-card">
+      <img src="assets/img/building3.jpg" alt="Office for sale">
+      <div class="card-text">
+        <h3>Office for sale</h3>
+        <p>4 Properties</p>
+      </div>
+    </div>
+
+    <div class="home-card">
+      <img src="assets/img/building4.jpg" alt="Villas for sale">
+      <div class="card-text">
+        <h3>Villas for sale</h3>
+        <p>4 Properties</p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<section class="hero-section" style="padding: 0; min-height: 500px; margin-left: 70px;">
+    <div class="content-container" style="border: none; box-shadow: none; min-height: 500px; width: 100%; max-width: 100%;">
+        <div class="text-and-services-area">
+            <div class="heading-area">
+                <h2 class="main-heading">Let's find the right selling<br>option for you</h2>
+                <p class="sub-text">Aliquam lacinia diam quis lacus euismod.</p>
+            </div>
+
+            <div class="services-cards">
+                <div class="card">
+                    <i class="fas fa-shield-alt icon"></i>
+                    <h3 class="card-title">Property Management</h3>
+                    <p class="service-card-text">Nullam sollicitudin blandit eros. eu pretium.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-key icon"></i>
+                    <h3 class="card-title">Mortgage Services</h3>
+                    <p class="service-card-text">Nullam sollicitudin blandit eros. eu pretium.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-sack-dollar icon"></i>
+                    <h3 class="card-title">Currency Services</h3>
+                    <p class="service-card-text">Nullam sollicitudin blandit eros. eu pretium.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-area" style="background-image: url('assets/img/home.png');">
+            </div>
+    </div>
+</section>
+
+<section class="explore-cities-section">
+  <!-- Left: Heading -->
+  <div class="explore-left">
+    <h2>Explore Cities</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+elit. Suspendisse varius enim in eros elementum
+tristique.</p>
+<button class="learn-more-btn">Learn More</button>
+  </div>
+
+  <!-- Right: Map Images -->
+  <div class="explore-right">
+    <div class="city-card">
+      <img src="https://tile.openstreetmap.org/12/656/1582.png" alt="Los Angeles">
+      <h3>Los Angeles</h3>
+      <p>2 Properties</p>
+    </div>
+
+    <div class="city-card">
+      <img src="https://tile.openstreetmap.org/12/654/1583.png" alt="San Francisco">
+      <h3>San Francisco</h3>
+      <p>1 Property</p>
+    </div>
+
+    <div class="city-card">
+      <img src="https://tile.openstreetmap.org/12/1204/1538.png" alt="New York">
+      <h3>New York</h3>
+      <p>10 Properties</p>
+    </div>
+  </div>
+</section>
+
+<!-- Realtor Help -->
+    <div class="help-section">
+      <h2>See How Realtor Can Help</h2>
+      <div class="subtitle">Aliquam lacinia diam quis lacus euismod</div>
+
+      <div class="help-cards">
+        <div class="help-card">
+          <img src="assets/img/icon1.svg.png" class="help-icon" />
+          <div class="help-title">Buy a property</div>
+          <div class="help-text">Nullam sollicitudin blandit eros eu pretium.<br/>Nullam maximus ultricies auctor.</div>
+          <button class="btn">Find a home →</button>
+        </div>
+
+        <div class="help-card active">
+          <img src="assets/img/icon2.svg.png" class="help-icon" />
+          <div class="help-title">Sell a property</div>
+          <div class="help-text">Nullam sollicitudin blandit eros eu pretium.<br/>Nullam maximus ultricies auctor.</div>
+          <button class="btn">Place an ad →</button>
+        </div>
+
+        <div class="help-card">
+          <img src="assets/img/icon3.svg.png" class="help-icon" />
+          <div class="help-title">Rent a property</div>
+          <div class="help-text">Nullam sollicitudin blandit eros eu pretium.<br/>Nullam maximus ultricies auctor.</div>
+          <button class="btn">Find a rental →</button>
+        </div>
+      </div>
+    </div>
+     
+<section class="hero-section-alt" style="padding: 0; min-height: 500px; margin-left: 70px;">
+  <div class="content-container" style="border: none; box-shadow: none; min-height: 500px; width: 100%; max-width: 100%;">
+    
+    <!-- Image on the LEFT -->
+    <div class="image-area" style="background-image: url('assets/img/dab32102779f51fd7cd590763e8ecfda92c36eeb.jpg');"></div>
+    
+    <!-- Content on the RIGHT -->
+<div class="text-and-services-area">
+  <div class="text-content">
+
+
+    <div class="card-badges">
+      <span class="badge featured">FEATURED</span>
+      <span class="badge for-sale">FOR SALE</span>
+    </div>
+    
+    <h2 class="main-heading">Comfortable Villa Green</h2>
+    <p class="sub-text">178 Broadway, Brooklyn</p>
+
+
+    <div class="card-specs">
+      <div class="spec-item">
+        <span class="spec-icon spec-box"></span>
+        <p class="spec-value">9 Beds</p>
+      </div>
+      <div class="spec-item">
+        <span class="spec-icon spec-box"></span>
+        <p class="spec-value">3 Baths</p>
+      </div>
+      <div class="spec-item">
+        <span class="spec-icon spec-box"></span>
+        <p class="spec-value">600 sqft</p>
+      </div>
+    </div>
+         <div class="contact-row">
+  <div class="contact-col">
+    <span>Total Free Customer Care</span>
+    <strong>(+88)123-555-888</strong>
+  </div>
+  <div class="contact-col">
+    <span>Live Support?</span>
+    <strong>agent@apus.com</strong>
+  </div>
+</div>
+    <div class="price-row">
+  <span class="card-price">$5,800</span>
+
+  <div class="spec-circles">
+    <span class="spec-circle"></span>
+    <span class="spec-circle"></span>
+    <span class="spec-circle"></span>
+  </div>
+</div>
+
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<section class="agents-section">
+    <div class="agents-container">
+        
+        <div class="agents-text-content">
+            <h2 class="agents-heading">Our Exclusive Agents</h2>
+            <p class="agents-sub-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+            </p>
+            <a href="#" class="learn-more-btn">
+                Learn More 
+                <span class="arrow-icon">→</span>
+            </a>
+        </div>
+
+        <div class="agents-list">
+            
+            <div class="agent-card">
+                <div class="agent-photo-box">
+                    <img src="assets/img/raplh.jpg" alt="Ralph Johnson" class="agent-photo">
+                </div>
+                <h3 class="agent-name">Ralph Johnson</h3>
+                <p class="agent-role">Manager</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-photo-box">
+                    <img src="assets/img/lori.jpg" alt="Lori Ramos" class="agent-photo">
+                </div>
+                <h3 class="agent-name">Lori Ramos</h3>
+                <p class="agent-role">Marketing</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-photo-box">
+                    <img src="assets/img/jack.jpg" alt="Jack Graham" class="agent-photo">
+                </div>
+                <h3 class="agent-name">Jack Graham</h3>
+                <p class="agent-role">Marketing</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="blog-section">
+    <div class="blog-header-container">
+        <div class="blog-header-left">
+            <h2 class="blog-heading">From Our Blog</h2>
+            <p class="blog-sub-text">Aliquam lacinia diam quis lacus euismod</p>
+        </div>
+        <a href="#" class="see-more-blog">
+            See More Blog <span class="arrow-icon-small">↗</span>
+        </a>
+    </div>
+
+    <div class="blog-cards-container">
+        
+        <a href="#" class="blog-card">
+            <div class="blog-image-wrapper">
+                <img src="assets/img/blog-1.jpg" alt="Interior design showing couch and dividers" class="blog-image">
+                <div class="blog-date-badge">
+                    <span class="month">Feb</span>
+                    <span class="day">03</span>
+                </div>
+            </div>
+            <p class="blog-category">Townhome</p>
+            <h3 class="blog-title">Unveils the Best Canadian Cities for Biking and Walk</h3>
+        </a>
+
+        <a href="#" class="blog-card">
+            <div class="blog-image-wrapper">
+                <img src="assets/img/blog-2.jpg" alt="Modern kitchen with large island" class="blog-image">
+                <div class="blog-date-badge">
+                    <span class="month">Feb</span>
+                    <span class="day">03</span>
+                </div>
+            </div>
+            <p class="blog-category">Villa</p>
+            <h3 class="blog-title">Diamond Manor Apartment in the New York and Service</h3>
+        </a>
+
+        <a href="#" class="blog-card">
+            <div class="blog-image-wrapper">
+                <img src="assets/img/home.png" alt="Couple holding miniature house" class="blog-image">
+                <div class="blog-date-badge">
+                    <span class="month">Feb</span>
+                    <span class="day">03</span>
+                </div>
+            </div>
+            <p class="blog-category">Townhome</p>
+            <h3 class="blog-title">7 Simple Ways to Keep Your Kids’ Toys From Talking Over Your Home</h3>
+        </a>
+        
+    </div>
+</section>
+
+<section class="contact-map-section">
+    <div class="map-container">
+        <iframe 
+        src="YOUR_GOOGLE_MAPS_EMBED_URL_HERE" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+        <div class="contact-form-overlay">
+            
+            <div class="contact-header">
+                <h2>Get In Touch</h2>
+                <p>Aliquam lacinia diam quis lacus euismod</p>
+            </div>
+            
+            <form class="contact-form">
+                <div class="name-fields">
+                    <div class="form-group-half">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Ali">
+                    </div>
+                    <div class="form-group-half">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Tufan">
+                    </div>
+                </div>
+                
+                <div class="form-group-full">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example.com">
+                </div>
+                
+                <div class="form-group-full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder=""></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+</section>
+
+<div id="footer">
+
+   <script>
+
+    fetch("../components/footer.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("footer").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

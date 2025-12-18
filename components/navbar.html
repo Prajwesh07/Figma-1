@@ -1,0 +1,171 @@
+
+<!-- navbar -->
+    <div class="navbar">
+
+    <a href="/Figma/index.html" class="logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/003/767/917/non_2x/house-location-flat-linear-long-shadow-icon-home-building-with-map-pinpoint-inside-outline-symbol-vector.jpg">
+        <h2>homez</h2>
+    </a>
+
+    <!-- HAMBURGER -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <div class="nav-links">
+        <a href="/Figma/index.html">Home1 ▾</a>
+        <a>Home2</a>
+        <a href="/Figma/figma3/figma3.html" >Home3 ▾</a>
+        <a>Home4 ▾</a>
+        <a>Home5 ▾</a>
+        <a  href="/Figma/figma6/figma6.html">Home6 ▾</a>
+        <a href="/Figma/figma7/figma7.html">Home7</a>
+        <a href="/Figma/figma-8/index-8.html">Home8 ▾</a>
+        <a href="/Figma/figma-9/index-9.html">Home9 ▾</a>
+        <a href="/Figma/figma-10/index-10.html">Home10 ▾</a>
+    </div>
+
+    <div class="right-nav">
+        <span>👤 Login / Register</span>
+        <span class="add-prop">Add Property ➤</span>
+    </div>
+</div>
+
+<style>
+    
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+  width:100%;
+  padding:20px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  background:#fff;
+  z-index:1000;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:#000;
+}
+
+.logo img{
+  width:35px;
+}
+
+/* NAV LINKS (DESKTOP) */
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:35px;
+  font-size:14px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#000;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ff6b6b;
+}
+
+/* ZIG-ZAG (DESKTOP ONLY) */
+.nav-links a:nth-child(even){
+  margin-top:-10px;
+}
+.nav-links a:nth-child(odd){
+  margin-top:10px;
+}
+
+/* RIGHT NAV */
+.right-nav{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+}
+
+.add-prop{
+  padding:10px 18px;
+  border:1px solid #000;
+  border-radius:40px;
+  cursor:pointer;
+}
+
+/* ================= HAMBURGER ================= */
+
+.menu-icon{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+#menu-toggle{
+  display:none;
+}
+
+/* ================= MOBILE SLIDER ================= */
+
+@media (max-width: 992px){
+
+  .menu-icon{
+    display:block;
+  }
+
+  /* OFF-CANVAS MENU */
+  .nav-links{
+    position:fixed;
+    top:0;
+    left:-100%;
+    width:280px;
+    height:100vh;
+    background:#fff;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:22px;
+    padding:90px 30px;
+    transition:left 0.35s ease;
+    box-shadow:6px 0 25px rgba(0,0,0,0.12);
+  }
+
+  /* SHOW MENU */
+  #menu-toggle:checked ~ .nav-links{
+    left:0;
+  }
+
+  /* REMOVE ZIG-ZAG ON MOBILE */
+  .nav-links a{
+    margin-top:0 !important;
+    font-size:16px;
+  }
+
+  .right-nav{
+    display:none;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px){
+
+  .navbar{
+    padding:15px 20px;
+  }
+
+  .logo h2{
+    font-size:18px;
+  }
+}
+
+</style>

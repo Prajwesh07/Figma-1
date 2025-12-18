@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate - Responsive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/figma7.css">
+</head>
+<body>
+
+
+  <div id="navbar">
+
+   <script>
+
+    fetch("../components/navbar.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("navbar").innerHTML = data ;
+    });
+   </script>
+
+   </div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-left">
+    <h1>Discover a place you'll<br>love to live</h1>
+
+    <div class="tabs">
+      <span class="active">All</span>
+      <span>For Sale</span>
+      <span>For Rent</span>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Enter Keyword">
+      <span class="advanced">Advanced</span>
+      <button class="search-btn">🔍</button>
+    </div>
+
+    <div class="stats">
+      <div>
+        <h3>154</h3>
+        <p>Award Winning</p>
+      </div>
+      <div>
+        <h3>6K+</h3>
+        <p>Happy Customer</p>
+      </div>
+      <div>
+        <h3>558+</h3>
+        <p>Property Ready</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="assets/img/7img1.png" class="img-back" alt="Background">
+    <div class="img-front">
+      <img src="assets/img/7img2.jpg" alt="Featured Property">
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS SECTION -->
+
+<section class="partners">
+  <div class="partners-container">
+    <p class="partners-text">Trusted by leading companies</p>
+    <div class="partners-logos">
+      <img src="assets/img/amazon.jpg" alt="Amazon">
+      <img src="assets/img/amd.jpg" alt="AMD">
+      <img src="assets/img/cisco.jpg" alt="Cisco">
+      <img src="assets/img/dropcam.jpg" alt="Dropcam">
+      <img src="assets/img/logitech.jpg" alt="Logitech">
+      <img src="assets/img/spotify.jpg" alt="Spotify">
+    </div>
+  </div>
+</section>
+
+<!-- 3rd page -->
+
+<!-- FEATURED HOMES -->
+<section class="fh-section">
+  <div class="fh-header">
+    <div>
+      <h2>Featured Homes</h2>
+      <p>Aliquam lacinia diam quis lacus euismod</p>
+    </div>
+    <a href="#" class="fh-view-all">All Types ↗</a>
+  </div>
+
+  <div class="fh-grid">
+    <div class="fh-card">
+      <img src="assets/img/home1.jpg" alt="Apartment">
+      <div class="fh-card-text">
+        <h3>Apartments for sale</h3>
+        <span>3 Properties</span>
+      </div>
+    </div>
+
+    <div class="fh-card">
+      <img src="assets/img/home2.jpg" alt="Single Family">
+      <div class="fh-card-text">
+        <h3>Single family homes for sale</h3>
+        <span>7 Properties</span>
+      </div>
+    </div>
+
+    <div class="fh-card">
+      <img src="assets/img/home3.jpg" alt="Office">
+      <div class="fh-card-text">
+        <h3>Office for sale</h3>
+        <span>4 Properties</span>
+      </div>
+    </div>
+
+    <div class="fh-card">
+      <img src="assets/img/home4.jpg" alt="Villa">
+      <div class="fh-card-text">
+        <h3>Villas for sale</h3>
+        <span>4 Properties</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 4th page -->
+
+<!-- OUR FEATURED PROPERTIES -->
+<section class="properties-section">
+  <div class="properties-header">
+    <div>
+      <h2>Our Featured Properties</h2>
+      <p>Aliquam lacinia diam quis lacus euismod</p>
+    </div>
+    <div class="filter-btns">
+      <button class="active">For Sale</button>
+      <button>For Rent</button>
+    </div>
+  </div>
+
+  <div class="properties-grid">
+    <div class="property-card">
+      <div class="img-box">
+        <img src="assets/img/luxery img.jpg" alt="Luxury Home">
+      </div>
+      <div class="card-body">
+        <h3>Luxury Family Home</h3>
+        <p class="location">132 Greene Ave</p>
+        <div class="features">
+          <span>🛌 6</span>
+          <span>🛀 2</span>
+          <span>📏 400</span>
+        </div>
+        <div class="price">$5,800</div>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <div class="img-box">
+        <img src="assets/img/monar img.jpg" alt="Pool Apartment">
+      </div>
+      <div class="card-body">
+        <h3>Skyper Pool Apartment</h3>
+        <p class="location">151 Tompkins Ave</p>
+        <div class="features">
+          <span>🛌 4</span>
+          <span>🛀 1</span>
+          <span>📏 200</span>
+        </div>
+        <div class="price">$2,850</div>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <div class="img-box">
+        <span class="badge">FEATURED</span>
+        <img src="assets/img/skyper pull.webp" alt="Hollywood House">
+      </div>
+      <div class="card-body">
+        <h3>House on the Hollywood</h3>
+        <p class="location">374 Johnson Ave</p>
+        <div class="features">
+          <span>🛌 6</span>
+          <span>🛀 2</span>
+          <span>📏 200</span>
+        </div>
+        <div class="price">$4,600</div>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <div class="img-box">
+        <img src="assets/img/property1.jpg" alt="Villa Bay">
+      </div>
+      <div class="card-body">
+        <h3>Gorgeous Villa Bay</h3>
+        <p class="location">18 Grattan St, Brooklyn</p>
+        <div class="features">
+          <span>🛌 8</span>
+          <span>🛀 2</span>
+          <span>📏 300</span>
+        </div>
+        <div class="price">$4,800</div>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <div class="img-box">
+        <img src="assets/img/property2.jpg" alt="Manor Apartment">
+      </div>
+      <div class="card-body">
+        <h3>Diamond Manor Apartment</h3>
+        <p class="location">343 Franklin Ave</p>
+        <div class="features">
+          <span>🛌 3</span>
+          <span>🛀 1</span>
+          <span>📏 200</span>
+        </div>
+        <div class="price">$3,500</div>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <div class="img-box">
+        <span class="badge">FEATURED</span>
+        <img src="assets/img/property3.jpg" alt="Villa Green">
+      </div>
+      <div class="card-body">
+        <h3>Comfortable Villa Green</h3>
+        <p class="location">178 Broadway, Brooklyn</p>
+        <div class="features">
+          <span>🛌 9</span>
+          <span>🛀 3</span>
+          <span>📏 600</span>
+        </div>
+        <div class="price">$5,800</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center-btn">
+    <button class="learn-btn">Learn More ↗</button>
+  </div>
+</section>
+
+<!-- 5th page -->
+<section class="cities-section">
+  <h2>Explore Cities</h2>
+  <p>Aliquam lacinia diam quis lacus euismod</p>
+
+  <div class="cities-grid">
+    <div class="city-card">
+      <img src="assets/img/filip-mroz-023T4jyCRqA-unsplash.jpg" alt="">
+      <div class="city-info">
+        <h4>New York</h4>
+        <span>10 Properties</span>
+      </div>
+    </div>
+
+    <div class="city-card">
+      <img src="assets/img/henning-witzel-ukvgqriuOgo-unsplash.jpg" alt="">
+      <div class="city-info">
+        <h4>Chicago</h4>
+        <span>1 Property</span>
+      </div>
+    </div>
+
+    <div class="city-card">
+      <img src="assets/img/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="">
+      <div class="city-info">
+        <h4>New Jersey</h4>
+        <span>0 Properties</span>
+      </div>
+    </div>
+
+    <div class="city-card">
+      <img src="assets/img/matthew-henry-VviFtDJakYk-unsplash.jpg" alt="">
+      <div class="city-info">
+        <h4>San Francisco</h4>
+        <span>1 Property</span>
+      </div>
+    </div>
+
+    <div class="city-card">
+      <img src="assets/img/piotr-chrobot-6oUsyeYXgTg-unsplash.jpg" alt="">
+      <div class="city-info">
+        <h4>Los Angeles</h4>
+        <span>2 Properties</span>
+      </div>
+    </div>
+
+    <div class="city-card">
+      <img src="assets/img/timo-wagner-fT6-YkB0nfg-unsplash.jpg" alt="">
+      <div class="city-info">
+        <h4>San Diego</h4>
+        <span>1 Property</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- EXPERIENCE SECTION -->
+<section class="experience-section">
+  <div class="corner top-left"></div>
+  <div class="corner bottom-right"></div>
+
+  <div class="experience-container">
+    <div class="left-content">
+      <h2>More than 20 Years of Real Estate Experience</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      <button class="cta-btn">Get Started <span>↗</span></button>
+    </div>
+
+    <div class="right-content">
+      <div class="stat-box">
+        <h3>0+</h3>
+        <span>Listing for<br>sale</span>
+      </div>
+      <div class="stat-box">
+        <h3>0+</h3>
+        <span>Listing for<br>rent</span>
+      </div>
+      <div class="stat-box">
+        <h3>0+</h3>
+        <span>Property<br>sold</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR PROPERTIES -->
+<section class="popular-section">
+  <div class="section-title">
+    <h2>Discover Popular Properties</h2>
+    <p>Aliquam lacinia diam quis lacus euismod</p>
+  </div>
+
+  <div class="card-row">
+    <div class="property-card">
+      <div class="img-box">
+        <span class="price">$5,800</span>
+        <img src="assets/img/city5.jpg" alt="Luxury Home">
+      </div>
+      <div class="card-body">
+        <h4>Luxury Family Home</h4>
+        <p class="address">132 Greene Ave</p>
+        <ul>
+          <li>6 Beds</li>
+          <li>2 Baths</li>
+          <li>400 sqft</li>
+        </ul>
+        <span class="type">For Sale</span>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <div class="img-box">
+        <span class="price">$4,800</span>
+        <img src="assets/img/city6.jpg" alt="Villa Bay">
+      </div>
+      <div class="card-body">
+        <h4>Gorgeous Villa Bay</h4>
+        <p class="address">18 Grattan St, Brooklyn</p>
+        <ul>
+          <li>8 Beds</li>
+          <li>2 Baths</li>
+          <li>300 sqft</li>
+        </ul>
+        <span class="type">For Sale</span>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <div class="img-box">
+        <span class="price">$2,850</span>
+        <img src="assets/img/city7.jpg" alt="Pool Apartment">
+      </div>
+      <div class="card-body">
+        <h4>Skyper Pool Apartment</h4>
+        <p class="address">151 Tompkins Ave</p>
+        <ul>
+          <li>4 Beds</li>
+          <li>1 Bath</li>
+          <li>200 sqft</li>
+        </ul>
+        <span class="type">For Sale</span>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <div class="img-box">
+        <span class="price">$3,500</span>
+        <img src="assets/img/city8.jpg" alt="Manor Apartment">
+      </div>
+      <div class="card-body">
+        <h4>Diamond Manor Apartment</h4>
+        <p class="address">343 Franklin Ave</p>
+        <ul>
+          <li>3 Beds</li>
+          <li>1 Bath</li>
+          <li>200 sqft</li>
+        </ul>
+        <span class="type">For Sale</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dots">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+</section>
+
+<!-- TESTIMONIAL SECTION -->
+<section class="testimonial-section">
+  <div class="testimonial-heading">
+    <h2>Testimonials From Our Customers</h2>
+    <p>Aliquam lacinia diam quis lacus euismod</p>
+  </div>
+
+  <div class="testimonial-container">
+    <div class="testimonial-image">
+      <img src="assets/img/simlygirl.jpg" alt="Customer">
+    </div>
+
+    <div class="testimonial-content">
+      <span class="badge">Perfect Quality</span>
+      <div class="quote-box">
+        <span class="quote-icon">"</span>
+        <p>Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn't on our original designs.</p>
+      </div>
+      <div class="author">
+        <h4>Dianne Russell</h4>
+        <span>Bank of America</span>
+      </div>
+      <div class="nav-buttons">
+        <button>&larr;</button>
+        <button>&rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HELP SECTION -->
+<section class="help-section">
+  <div class="help-heading">
+    <h2>See How Realtor Can Help</h2>
+    <p>Aliquam lacinia diam quis lacus euismod</p>
+  </div>
+
+  <div class="help-cards">
+    <div class="help-card">
+      <img src="assets/img/icon1.png" alt="Buy">
+      <h3>Buy a property</h3>
+      <p>Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+      <button class="btn-outline">Find a home <span>↗</span></button>
+    </div>
+
+    <div class="help-card">
+      <img src="assets/img/icon2.png" alt="Sell">
+      <h3>Sell a property</h3>
+      <p>Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+      <button class="btn-dark">Place an ad <span>↗</span></button>
+    </div>
+
+    <div class="help-card">
+      <img src="assets/img/icon3.svg.png" alt="Rent">
+      <h3>Rent a property</h3>
+      <p>Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.</p>
+      <button class="btn-outline">Find a rental <span>↗</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- INQUIRY SECTION -->
+<section class="inquiry-section">
+  <div class="inquiry-wrapper">
+    <div class="form-box">
+      <h2>Real Estate Inquiry Form</h2>
+      <p class="sub-text">As the complexity of buildings to increase</p>
+
+      <label>Inquiry Type</label>
+      <select><option>Please choose an option</option></select>
+
+      <div class="two-field">
+        <div>
+          <label>How to address</label>
+          <select><option>Please choose an option</option></select>
+        </div>
+        <div>
+          <label>Your Name</label>
+          <input type="text" placeholder="Your Name">
+        </div>
+      </div>
+
+      <label>Email</label>
+      <input type="email" placeholder="example@gmail.com">
+
+      <label>Personnel Role</label>
+      <select><option>Please choose an option</option></select>
+
+      <div class="two-field">
+        <div>
+          <label>Max Price</label>
+          <input type="text" placeholder="$90">
+        </div>
+        <div>
+          <label>Min Size (sq ft)</label>
+          <input type="text" placeholder="20">
+        </div>
+      </div>
+
+      <button class="submit-btn">Submit</button>
+    </div>
+
+    <div class="image-box">
+      <img src="assets/img/form img.jpg" alt="Form">
+    </div>
+  </div>
+</section>
+
+<!-- AGENT SECTION -->
+<section class="agent-section">
+  <div class="agent-content">
+    <h2>Become A Real Estate Agent</h2>
+    <p>We only work with the best companies around the globe to survey</p>
+    <button class="register-btn">Register Now <span>↗</span></button>
+  </div>
+
+  <div class="agent-image">
+    <img src="assets/img/standman.png" alt="Agent">
+  </div>
+</section>
+
+</body>
+</html>
